@@ -37,8 +37,6 @@
     -->
     <string name="config_mainBuiltInDisplayCutout">M -544,0 L -544,108 L -287,108 L -287,0 Z</string>
 
-    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
-
     <bool name="config_is_powerbutton_fps">true</bool>
 
     <!-- Whether to cancel fingerprint operation if not idle -->
