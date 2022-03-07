@@ -14,6 +14,7 @@ WITH_GMS := true
 # Official
 DERP_BUILDTYPE := Official
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit some common stuff
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
