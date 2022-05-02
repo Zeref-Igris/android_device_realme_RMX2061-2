@@ -7,6 +7,9 @@
 # Inherit from RMX2061 device
 $(call inherit-product, device/realme/RMX2061/device.mk)
 
+# Hotword
+$(call inherit-product, vendor/hotword/google.mk)
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GMS := true
