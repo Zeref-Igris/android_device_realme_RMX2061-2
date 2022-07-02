@@ -10,21 +10,18 @@ $(call inherit-product, device/realme/RMX2061/device.mk)
 # Hotword
 $(call inherit-product, vendor/hotword/google.mk)
 
-# Bootanimation Resolution
-TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
-
-# Official
-DERP_BUILDTYPE := Official
+# Inherit some common xdroid stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT := 1080
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
+XDROID_MAINTAINER := Arpan Debnath
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-USE_LEGACY_BOOTANIMATION := true
-
-# Inherit some common stuff
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Device identifier
-PRODUCT_NAME := derp_RMX2061
+PRODUCT_NAME := xdroid_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme 6 Pro
